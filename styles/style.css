@@ -48,9 +48,9 @@ body {
 nav {
     background-color: #DEBC2F;
     height: 6em;
-    width: 90%;
+    width: 70%;
     bottom: 5%;
-    left: 5%;
+    left: 15%;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -63,6 +63,7 @@ nav ul {
     display: flex;
     flex-flow: row nowrap;
     gap: 1em;
+    font-size: .75em;
 }
 
 nav ul a {
