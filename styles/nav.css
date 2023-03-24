@@ -12,7 +12,7 @@ html {
     height: 100vh;
 }
 
-nav {
+/* nav {
     background-color: #DEBC2F;
     height: 5em;
     display: flex;
@@ -20,7 +20,7 @@ nav {
     bottom: 5%;
     left: 10%;
     position: fixed;
-    justify-content: space-around;
+    /* justify-content: space-around;
     border-radius: 4em;
 }
 
@@ -31,3 +31,60 @@ nav ul {
     align-items: center;
 }
 
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+}
+
+nav ul li + li {
+    margin-left: .25em;
+}
+
+nav ul li img {
+    margin-right: .15em;
+} */
+
+nav {
+background-color: #DEBC2F;
+    height: 8em;
+    width: 80%;
+    bottom: 5%;
+    left: 10%;
+    position: fixed;
+    border-radius: 4em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row nowrap;
+    /* justify-content: center; */
+    gap: .75em;
+    justify-content: center;
+}
+
+nav ul a  {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    flex-flow: column nowrap;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+} 
+
+
+nav ul li + li {
+    margin-left: .25em;
+}
+
+/* nav ul li a img {
+    margin-right: .25em;
+} */

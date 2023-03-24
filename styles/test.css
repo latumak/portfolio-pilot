@@ -1,0 +1,28 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+.scroll-to-top {
+    position: relative;
+}
+
+a.btn {
+    position: fixed;
+    bottom: 5em;
+    right: 3em;
+    z-index: 20;
+    cursor: pointer;
+    /* animation: movebtn 3s ease-in-out infinite;
+    transition: all 0.5s ease-in-out; */
+    visibility: hidden;
+}
