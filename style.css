@@ -1,0 +1,272 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Karla-BoldItalic';
+    src: url(../assets/Karla-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Karla-Italic';
+    src: url(../assets/Karla-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url(../assets/Karla-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'LilitaOne-Regular';
+    src: url(../assets/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'VarelaRound-Regular';
+    src: url(../assets/VarelaRound-Regular.ttf);
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: #202020;
+    font-family: 'VarelaRound-Regular', Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 1.5em;
+}
+
+nav {
+    background-color: #DEBC2F;
+    height: 6em;
+    width: 70%;
+    bottom: 5%;
+    left: 15%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2em;
+    font-size: .75em;
+}
+
+nav ul a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+}
+
+nav ul a:hover {
+    color: #6279B8;
+}
+
+nav ul a:is(:link, :active, :visited).active {
+    color: #454ADE;
+}
+
+main#home section:first-child p+p {
+    font-family: 'LilitaOne-Regular';
+    font-size: 2.5em;
+    color: #6279B8;
+}
+
+h1 {
+    font-family: 'LilitaOne-Regular';
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 1em;
+}
+
+h2 {
+    font-family: 'LilitaOne-Regular';
+    color: #6279B8;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.25em;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Images in de main */
+
+main {
+    padding-bottom: 4em;
+}
+
+main section {
+    padding-bottom: 5em;
+}
+
+main img.kasinah {
+    display: block;
+    margin: 1em auto 1em auto;
+    width: 70%;
+}
+
+main section:first-of-type img {
+    width: 100%;
+}
+
+main section:nth-of-type(3) img {
+    width: 100%;
+    top: 0;
+}
+
+/* Sections in de main */
+
+main a {
+    font-family: 'LilitaOne-Regular';
+    font-size: 1.125em;
+    background: #454ADE;
+    border-radius: 1.5em;
+    text-align: center;
+    padding: .75em 1em;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+main#home section:first-child p:first-of-type {
+    font-family: 'LilitaOne-Regular';
+    font-size: 1.5em;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+main section.projects article {
+    border-radius: 2em;
+    background-color: #3A3A3A;
+    flex-shrink: 0;
+    padding: 1.5em;
+}
+
+main#home section.projects{
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+}
+
+main#projecten section.projects article {
+    margin-bottom: 1.5em;
+
+}
+
+main#home section.projects article {
+    width: 80%;
+    margin-right: 1.5em;
+}
+
+main#home section.projects article a {
+    font-size: 1.125em;
+    color: white;
+    background: #454ADE;
+    border-radius: 1.5em;
+    text-align: center;
+    padding: .75em 1em;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+main#home section.projects article p:first-of-type {
+    font-style: italic;
+}
+
+
+main#contact ul {
+    list-style-type: none;
+}
+
+main#contact a.contact {
+    background-color: #3A3A3A;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    font-family: 'VarelaRound-Regular', Arial, Helvetica, sans-serif;
+}
+
+main#contact img {
+    vertical-align: middle;
+    padding-right: 1.5em;
+}
+
+
+/* main header.projectPagina {
+    display: flex;
+    align-items: center;
+} */
+
+
+main header.projecten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin: 0;
+}
+
+main header.projecten a {
+    margin: 0;
+}
+
+main header.projecten h1 {
+    padding-bottom: 0;
+}
+
+.scroll-to-top {
+    position: relative;
+}
+
+.btn {
+    position: fixed;
+    bottom: 50%;
+    right: 1em;
+    z-index: 20;
+    cursor: pointer;
+    visibility: hidden;
+    background-color: transparent;
+    border: 0 solid transparent;
+}
+
+
+/* Footer */
+
+/* footer {
+    height: 15em;
+    height: 6em;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer a {
+    text-decoration: none;
+} */
+
